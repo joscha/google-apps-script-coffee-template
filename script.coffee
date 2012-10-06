@@ -54,5 +54,5 @@ onInstall = ->
 # Event that can be run from the Script Editor
 # This is just a helper until the Google Apps Script Code Editor can deal with 'bla = function() {}' definitions and/or static methods
 `function setup() {
-  MyClass.setup.apply(this, arguments);
+  MyClass.setup.apply(MyClass, arguments);
 }`
